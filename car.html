@@ -1,0 +1,98 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-11-13 00:44:56
+ * @LastEditTime: 2020-05-27 14:15:17
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \酒店前端页面\car.html
+--> 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta charset="UTF-8">
+	<title>客房</title>
+
+
+    <link rel="stylesheet" type="text/css" href="css/lib/font-lotusicon.css">
+
+
+
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+	<link rel="stylesheet" href="css/core.css">
+	<link rel="stylesheet" href="css/icon.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="shortcut icon" href="images/favicon.png">
+	
+</head>
+<body>
+
+	<header class="aui-header-default aui-header-fixed ">
+		<a href="javascript:history.back(-1)" class="aui-header-item">
+			<i class="aui-icon aui-icon-back"></i>
+		</a>
+		<div class="aui-header-center aui-header-center-clear">
+			<div class="aui-header-center-logo">
+				<div class="">客房</div>
+			</div>
+		</div>
+
+	</header>
+	<section class="aui-car-content">
+		<div class="aui-dri"></div>
+		<div class="aui-car-box">
+			<div class="aui-car-box-name">
+				<input type="checkbox" class="check goods-check shopCheck" style="opacity: 0;">
+			
+			</div>
+			<div class="aui-car-box-list">
+				<ul id="single">
+				
+
+				</ul>
+
+
+				
+				<input style="margin-left:45px;margin-right:45px;" id="data1" type="text"  name="arrive" class="awe-calendar from" placeholder="入住日期">	
+				<input style="margin-left:45px;margin-right:45px;margin-top: 10px;margin-bottom: 10px;" id="data2" type="text" name="departure" class="awe-calendar to" placeholder="离店日期">	
+			
+
+
+				
+			</div>
+	
+		</div>
+	</section>
+	<div class="aui-payment-bar">
+	
+		<div class="shop-total">
+			<strong>合计：<i class="total" id="AllTotal">0.00</i></strong>
+		</div>
+		<a onclick="submit()" class="settlement">提交订单</a>
+	</div>
+    <script type="text/javascript" src="js/lib/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+ 
+
+
+
+    <!-- validate -->
+ 
+    <!-- Custom jQuery -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/aui-car.js"></script>
+
+</body>
+</html>

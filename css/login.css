@@ -1,0 +1,88 @@
+
+
+    .login-wrapper {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+    .login-wrapper img {
+      position: absolute;
+      z-index: 1;
+    }
+    .login {
+      max-width: 340px;
+      margin: 70px auto;
+      background: #fff;
+      padding: 20px 40px;
+      border-radius: 10px;
+      position: relative;
+      z-index: 9;
+    }
+    .title {
+      font-size: 26px;
+      line-height: 50px;
+      font-weight: bold;
+      margin: 10px;
+      text-align: center;
+    }
+    div>img{
+      width: 70%;
+      margin-left: 15%;
+      display: block;
+      margin-top: 26px;
+      background: #fff;
+      color: #333;
+      border: 1px solid #7da9c7;
+
+      text-indent: 20px;
+      font-size: 14px;
+    }
+    form > input {
+      width: 100%;
+      height: 34px;
+      display: block;
+      margin-top: 26px;
+      background: #fff;
+      color: #333;
+      border: 1px solid #7da9c7;
+
+      text-indent: 20px;
+      font-size: 14px;
+    }
+    form > button {
+      width: 100%;
+      height: 34px;
+      display: block;
+      margin-top: 26px;
+      background: #1ab2ff;
+      color: #fff;
+      border: 1px solid #1ab2ff;
+      border-radius: 100px;
+      text-align: center;
+      font-size: 16px;
+    }
+    .register {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 22px;
+      text-indent: 8px;
+      color: #1ab2ff;
+      cursor: pointer;
+      display: inline-block;
+    }
+    .register:hover {
+      color: #2c2fd6;
+    }
+    @media (max-width: 768px) {
+      .login {
+        max-width: 260px;
+        margin: 60px auto;
+        background: #fff;
+        padding: 20px 20px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 9;
+      }
+    }

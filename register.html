@@ -1,0 +1,63 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-05-25 09:46:04
+ * @LastEditTime: 2020-05-28 14:01:47
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \登录\register.html
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/register.css">
+<body>
+    <div>
+        <div class="loading-wrapper" v-show="showLoading">
+          <Loading></Loading>
+        </div>
+        <div class="register-wrapper" v-show="!showLoading">
+          <img :src="imgUrl" alt="" width="100%" height="100%">
+          <div id="register">
+            <p class="title">酒店账户注册</p>
+            <form
+              :model="ruleForm2"
+              status-icon
+              :rules="rules2"
+              ref="ruleForm2"
+              labwidth="0"
+              class="demo-ruleForm"
+            >
+              <form >
+                <input  id="phone"  placeholder="请输入电话号码"></input>
+              </form>
+              <form >
+                <input  id="idcard"  placeholder="请输入身份证或者上传身份证图片"></input><p id="name"></p>
+                
+              </form>
+              <input type="file" id="img" onchange="getImg(event)" /> <p id="name"></p>
+                
+
+              <form >
+                <input id="password1" type="password"  placeholder="输入密码"></input>
+              </form>
+              <form >
+                <input id="password2" type="password"   placeholder="确认密码"></input>
+              </form>
+             
+              <form>
+                <button type="button" onclick="send()" style="width:100%;">注册</button>
+              <a href="login.html">  <p class="login" @click="gotoLogin">已有账号？立即登录</p></a>
+              </form>
+             
+            </form>
+          </div>
+        </div>
+      </div>
+</body>
+<script src="js/register.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+</html>

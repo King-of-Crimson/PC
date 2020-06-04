@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta charset="UTF-8">
+	<title>餐厅</title>
+	<link rel="stylesheet" href="css/core.css">
+	<link rel="stylesheet" href="css/icon.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="shortcut icon" href="images/favicon.png">
+	
+</head>
+<body>
+
+	<header class="aui-header-default aui-header-fixed ">
+		<a href="javascript:history.back(-1)" class="aui-header-item">
+			<i class="aui-icon aui-icon-back"></i>
+		</a>
+		<div class="aui-header-center aui-header-center-clear">
+			<div class="aui-header-center-logo">
+				<div class="">餐厅</div>
+			</div>
+		</div>
+
+	</header>
+	<section class="aui-car-content">
+		<div class="aui-dri"></div>
+		<div class="aui-car-box">
+			<div class="aui-car-box-name">
+				<input type="checkbox" class="check goods-check shopCheck" style="opacity: 0;">
+				<h3>
+					<a href="#">早餐</a>
+				</h3>
+			</div>
+			<div class="aui-car-box-list">
+				<ul id="breakfast">
+				
+
+				</ul>
+
+
+
+
+
+
+
+				<div class="aui-car-box">
+					<div class="aui-car-box-name">
+						
+						<h3>
+							<a href="#">午餐</a>
+						</h3>
+					</div>
+					<div class="aui-car-box-list"></div>
+				<ul id="laugh">
+	
+				
+				</ul>
+			</div>
+
+
+
+			<div class="aui-car-box">
+				<div class="aui-car-box-name">
+					
+					<h3>
+						<a href="#">晚餐</a></a>
+					</h3>
+				</div>
+				<div class="aui-car-box-list"></div>
+			<ul id="dinner">
+
+			
+			</ul>
+		</div>
+
+
+		<div class="aui-car-box">
+			<div class="aui-car-box-name">
+				
+				<h3>
+					<a href="#">饮料</a>
+				</h3>
+			</div>
+			<div class="aui-car-box-list"></div>
+		<ul id="water">
+
+		
+		</ul>
+	</div>
+
+
+	
+		</div>
+	</section>
+	<div class="aui-payment-bar">
+	
+		<div class="shop-total">
+			<strong>合计：<i class="total" id="AllTotal">0.00</i></strong>
+		</div>
+		<button  onclick="submit()" class="settlement">提交订单</button>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/aui-car2.js"></script>
+
+</body>
+</html>
